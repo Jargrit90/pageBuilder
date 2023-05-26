@@ -1,0 +1,30 @@
+.main_menu_box {
+    position: fixed;
+    z-index: 10;
+    bottom: 0;
+    width: 100%;
+    min-height: 50px;
+    padding: 10px 0px;
+    border-top: solid 1px lightgray;
+    height: auto;
+}
+.bottom_bar {
+    margin-top: 10px;
+}
+.top_bar_button {
+    border-radius: 20px;
+    padding: 5px 10px; 
+    margin: 0px 10px;
+}
+.top_bar_button:hover {
+    background-color: rgb(200,200,200);
+    box-shadow: 1px 1px 1px black;
+}
+.sub_button {
+    width: auto;
+    height: auto;
+    margin: 5px 10px;
+}
+.sub_button_title {
+    width: 100%;
+}
