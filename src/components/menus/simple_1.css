@@ -1,0 +1,19 @@
+.simple_menu_box {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    border-bottom: solid 1px gray;
+}
+
+.simple_menu_btn_box {
+    height: 50px;
+    font-size: calc(12px + 0.5vw);
+    margin: 0px 10px;
+}
+.simple_menu_btn_box:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}

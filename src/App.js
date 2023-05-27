@@ -5,6 +5,7 @@ import * as method from './slices/changeValue';
 import './App.css';
 
 import BuilderMenu from './components/BuilderMenu/BuilderMenu';
+import * as menuOption from './components/menus/Simple_menu';
 /*
 font-family: 'Abel', sans-serif;
 font-family: 'Lobster', cursive;
@@ -24,7 +25,9 @@ function App() {
   }
   return (
     <div className="App">
-      <div style={style}>AAAAAAA</div>
+      <div style={style}>
+        {state.value.rodzaj_menu === 'simple_1' ? <menuOption.Simple_1 /> : null}
+      </div>
       <BuilderMenu />
     </div>
   );

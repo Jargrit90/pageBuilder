@@ -6,7 +6,9 @@ export const changeValue = createSlice({
     kategoria: 'ogolne',
     wielkosc_czcionki: 16,
     rodzaj_czcionki: 'Abel',
-    typ_czcionki: 'normalna'
+    typ_czcionki: 'normalna',
+    rodzaj_menu: 'simple_1',
+    umiejscowienie: 'left'
   },
   reducers: {
     changeState: (state, action)=>{
