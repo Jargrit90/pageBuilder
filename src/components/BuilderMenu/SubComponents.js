@@ -10,7 +10,7 @@ export function Ogolne(){
         <div className="sub_buttons_box flexCC">
             <div className="sub_button">
                 <div className="sub_button_title">Wielkość czcionki</div>
-                <select onChange={(event)=>dispatch(method.changeState(['wielkosc_czcionki', parseInt(event.target.value)]))}>
+                <select onChange={(event)=>dispatch(method.changeState(['wielkosc_czcionki', parseInt(event.target.value)]))} value={state.value.wielkosc_czcionki}>
                     <option value={16}>16</option>
                     <option value={18}>18</option>
                     <option value={20}>20</option>
@@ -21,7 +21,7 @@ export function Ogolne(){
             </div>
             <div className="sub_button">
                 <div className="sub_button_title">Rodzaj czcionki</div>
-                <select onChange={(event)=>dispatch(method.changeState(['rodzaj_czcionki', event.target.value]))}>
+                <select onChange={(event)=>dispatch(method.changeState(['rodzaj_czcionki', event.target.value]))} value={state.value.rodzaj_czcionki}>
                     <option value="Abel">Abel</option>
                     <option value="Playfair Display">Playfair Display</option>
                     <option value="Roboto">Roboto</option>
@@ -36,7 +36,7 @@ export function Ogolne(){
             </div>
             <div className="sub_button">
             <div className="sub_button_title">Typ czcionki</div>
-                <select onChange={(event)=>dispatch(method.changeState(['typ_czcionki', event.target.value]))}>
+                <select onChange={(event)=>dispatch(method.changeState(['typ_czcionki', event.target.value]))} value={state.value.typ_czcionki}>
                     <option value="normal">Normalna</option>
                     <option value="bold">Pogrubiona</option>
                 </select>
@@ -51,7 +51,7 @@ export function Menu(){
         <div className="sub_buttons_box flexCC">
         <div className="sub_button">
             <div className="sub_button_title">Rodzaj menu</div>
-            <select onChange={(event)=>dispatch(method.changeState(['rodzaj_menu', event.target.value]))}>
+            <select onChange={(event)=>dispatch(method.changeState(['rodzaj_menu', event.target.value]))} value={state.value.rodzaj_menu}>
                 <option value="simple_1">Simple 1</option>
                 <option value="simple_2">Simple 2</option>
                 <option value="side_1">Side 1</option>
@@ -60,7 +60,7 @@ export function Menu(){
         </div>
         <div className="sub_button">
         <div className="sub_button_title">Umiejscowienie przycisków</div>
-            <select onChange={(event)=>dispatch(method.changeState(['umiejscowienie', event.target.value]))}>
+            <select onChange={(event)=>dispatch(method.changeState(['umiejscowienie', event.target.value]))} value={state.value.umiejscowienie}>
                 <option value="left">Po lewej</option>
                 <option value="center">Centralnie</option>
                 <option value="right">Po prawej</option>

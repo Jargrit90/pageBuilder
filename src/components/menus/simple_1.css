@@ -10,7 +10,7 @@
 
 .simple_menu_btn_box {
     height: 50px;
-    font-size: calc(12px + 0.5vw);
+    font-size: calc(10px + 0.5vw);
     margin: 0px 10px;
 }
 .simple_menu_btn_box:hover {
