@@ -8,16 +8,20 @@ export const changeValue = createSlice({
     rodzaj_czcionki: 'Abel',
     typ_czcionki: 'normalna',
     rodzaj_menu: 'simple_1',
-    umiejscowienie: 'left'
+    umiejscowienie: 'left',
+    sub_menu_active: false
   },
   reducers: {
     changeState: (state, action)=>{
       state[action.payload[0]] = action.payload[1];
+    },
+    negativeState: (state, action)=>{
+      state[action.payload] = !state[action.payload];
     }
   },
 })
 
 // Action creators are generated for each case reducer function
-export const { changeState } = changeValue.actions
+export const { changeState, negativeState } = changeValue.actions
 
 export default changeValue.reducer

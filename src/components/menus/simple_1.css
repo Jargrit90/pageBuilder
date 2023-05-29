@@ -12,8 +12,27 @@
     height: 50px;
     font-size: calc(10px + 0.5vw);
     margin: 0px 10px;
+    position: relative;
 }
-.simple_menu_btn_box:hover {
+.simple_menu_btn_box:hover, .simple_menu_sub_btn:hover {
     text-decoration: underline;
     cursor: pointer;
+}
+
+.simple_menu_sub_btn_box {
+    width: 100%;
+    height: 100%;
+}
+.sub_btns_box {
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    z-index: 2;
+}
+.simple_menu_sub_btn {
+    background-color: white;
+    box-sizing: border-box;
+    border: solid 1px gray;
+    padding: 5px 0px;
 }

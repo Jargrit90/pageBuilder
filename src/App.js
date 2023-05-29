@@ -27,6 +27,7 @@ function App() {
     <div className="App">
       <div style={style}>
         {state.value.rodzaj_menu === 'simple_1' ? <menuOption.Simple_1 /> : null}
+        {state.value.rodzaj_menu === 'simple_2' ? <menuOption.Simple_2 /> : null}
       </div>
       <BuilderMenu />
     </div>
