@@ -54,6 +54,8 @@ export function Menu(){
             <select onChange={(event)=>dispatch(method.changeState(['rodzaj_menu', event.target.value]))} value={state.value.rodzaj_menu}>
                 <option value="simple_1">Simple 1</option>
                 <option value="simple_2">Simple 2</option>
+                <option value="simple_3">Simple 3</option>
+                <option value="simple_4">Simple 4</option>
                 <option value="side_1">Side 1</option>
                 <option value="side_2">Side 2</option>
             </select>
