@@ -49,31 +49,42 @@ export function Menu(){
     const dispatch = useDispatch();
     return (
         <div className="sub_buttons_box flexCC">
-        <div className="sub_button">
-            <div className="sub_button_title">Rodzaj menu</div>
-            <select onChange={(event)=>dispatch(method.changeState(['rodzaj_menu', event.target.value]))} value={state.value.rodzaj_menu}>
-                <option value="simple_1">Simple 1</option>
-                <option value="simple_2">Simple 2</option>
-                <option value="simple_3">Simple 3</option>
-                <option value="simple_4">Simple 4</option>
-                <option value="side_1">Side 1</option>
-                <option value="side_2">Side 2</option>
-            </select>
+            <div className="sub_button">
+                <div className="sub_button_title">Rodzaj menu</div>
+                <select onChange={(event)=>dispatch(method.changeState(['rodzaj_menu', event.target.value]))} value={state.value.rodzaj_menu}>
+                    <option value="simple_1">Simple 1</option>
+                    <option value="simple_2">Simple 2</option>
+                    <option value="simple_3">Simple 3</option>
+                    <option value="simple_4">Simple 4</option>
+                    <option value="side_1">Side 1</option>
+                    <option value="side_2">Side 2</option>
+                </select>
+            </div>
+            <div className="sub_button">
+                <div className="sub_button_title">Umiejscowienie przycisków</div>
+                    <select onChange={(event)=>dispatch(method.changeState(['umiejscowienie', event.target.value]))} value={state.value.umiejscowienie}>
+                        <option value="left">Po lewej</option>
+                        <option value="center">Centralnie</option>
+                        <option value="right">Po prawej</option>
+                </select>
+            </div>
         </div>
-        <div className="sub_button">
-        <div className="sub_button_title">Umiejscowienie przycisków</div>
-            <select onChange={(event)=>dispatch(method.changeState(['umiejscowienie', event.target.value]))} value={state.value.umiejscowienie}>
-                <option value="left">Po lewej</option>
-                <option value="center">Centralnie</option>
-                <option value="right">Po prawej</option>
-            </select>
-        </div>
-    </div>
     )
 }
 export function Glowna(){
+    const state = useSelector((state) => state);
+    const dispatch = useDispatch();
     return (
-        <>Glowna</>
+        <div className="sub_buttons_box flexCC">
+            <div className="sub_button">
+                <div className="sub_button_title">Rodzaj menu</div>
+                <select onChange={(event)=>dispatch(method.changeState(['komponent_glowny', event.target.value]))} value={state.value.komponent_glowny}>
+                    <option value="mainpage_1">Strona główna 1</option>
+                    <option value="mainpage_2">Strona główna 2</option>
+                    <option value="mainpage_3">Strona główna 3</option>
+                </select>
+            </div>
+        </div>
     )
 }
 export function Portfolio(){

@@ -13,6 +13,8 @@ export const changeValue = createSlice({
     button_name: false,
     button_name_value: "aaa",
     submenu_active: "",
+    sm_4_box: "",
+    komponent_glowny: 'mainpage_1'
   },
   reducers: {
     changeState: (state, action)=>{

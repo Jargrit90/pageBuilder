@@ -60,9 +60,13 @@
     height: auto;
     min-height: 300px;
     flex-direction: column;
-    /*transform: translateY(-100%);
-    animation: show_sm_4_box forwards 1s;*/
-
+    transform: translateY(-100%);
+}
+.sm_4_shown {
+    animation: show_sm_4_box 0.7s forwards linear;
+}
+.sm_4_hidden {
+    animation: hide_sm_4_box 0.7s forwards linear;
 }
 @keyframes show_sm_4_box {
     0% {
@@ -70,6 +74,14 @@
     }
     100% {
         transform: translateY(0%);
+    }
+}
+@keyframes hide_sm_4_box {
+    0% {
+        transform: translateY(0%);
+    }
+    100% {
+        transform: translateY(-100%);
     }
 } 
 .sm_4_btns_box {

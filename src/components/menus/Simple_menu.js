@@ -90,11 +90,20 @@ export function Simple_4 (){
     const dispatch = useDispatch();
     return (
         <>
-        <div className='sm_4_box flexCC'>
+        <div className={state.value.sm_4_box === "" ? "sm_4_box flexCC" : state.value.sm_4_box === true ? 'sm_4_box flexCC sm_4_shown' : 'sm_4_box flexCC sm_4_hidden'}>
             <div className='sm_4_btns_box'>
                 <div className="square_btn">
-                    <div className="square_btn_box flexCC"><i class="fa-solid fa-bars"></i></div>
+                    <div className="square_btn_box flexCC" onClick={()=>dispatch(method.negativeState('sm_4_box'))}><i className="fa-solid fa-bars"></i></div>
                 </div>
+                <div className='simple_menu_box flexCC'>
+                    <div className="simple_menu_btn_box flexCC">Przycisk 1</div>
+                    <div className="simple_menu_btn_box flexCC" onClick={()=>dispatch(method.changeState(['submenu_active', 'sub_3']))}>Przycisk 2<i className="fa-solid fa-caret-down"></i></div>
+                    <div className="simple_menu_btn_box flexCC">Przycisk 3</div>
+                    <div className="simple_menu_btn_box flexCC" onClick={()=>dispatch(method.changeState(['submenu_active', 'sub_4']))}>Przycisk 4<i className="fa-solid fa-caret-down"></i></div>
+                    <div className="simple_menu_btn_box flexCC">Przycisk 5</div>
+                    <div className="simple_menu_btn_box flexCC">Przycisk 6</div>
+                </div>
+                {state.value.submenu_active === "sub_3" || state.value.submenu_active === "sub_4" ? <Submenu />: null}
             </div>
         </div>
         </>

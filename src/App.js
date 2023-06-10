@@ -7,6 +7,7 @@ import './App.css';
 import BuilderMenu from './components/BuilderMenu/BuilderMenu';
 import * as menuOption from './components/menus/Simple_menu';
 import * as menuOption_2 from './components/menus/Side_menu';
+import * as mainpageOption from './components/mainpages/Mainpage';
 /*
 font-family: 'Abel', sans-serif;
 font-family: 'Lobster', cursive;
@@ -33,6 +34,9 @@ function App() {
         {state.value.rodzaj_menu === 'simple_4' ? <menuOption.Simple_4 /> : null}
         {state.value.rodzaj_menu === 'side_1' ? <menuOption_2.Side_1 /> : null}
         {state.value.rodzaj_menu === 'side_2' ? <menuOption_2.Side_2 /> : null}
+        {state.value.komponent_glowny === 'mainpage_1' ? <mainpageOption.Mainpage_1 /> : null}
+        {state.value.komponent_glowny === 'mainpage_2' ? <mainpageOption.Mainpage_2 /> : null}
+        {state.value.komponent_glowny === 'mainpage_3' ? <mainpageOption.Mainpage_3 /> : null}
       </div>
       <BuilderMenu />
     </div>
