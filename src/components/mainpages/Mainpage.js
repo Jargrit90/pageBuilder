@@ -22,18 +22,18 @@ export function Mainpage_1(){
                     <div className="side full_side flexCC">
                         <div className="sub_desc_title">Tytuł</div>
                         <div className="sub_desc_side_text">
-                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
-                                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+                            sunt in culpa qui officia deserunt mollit anim id est laborum.
                         </div>
                     </div>
                 </div>
                 <div className="sub_desc_info_box flexCC">
                     <div className="side full_side flexCC">
-                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
-                                sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            <div className="sub_desc_title">Tytuł</div>
+                        <div className="sub_desc_title">Tytuł</div>
                         <div className="sub_desc_side_text">
-                    </div>
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+                            sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </div>
                     </div>
                     <div className="side empty_side"></div>
                 </div>

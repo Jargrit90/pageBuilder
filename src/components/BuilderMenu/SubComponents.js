@@ -93,8 +93,19 @@ export function Portfolio(){
     )
 }
 export function Galeria(){
+    const state = useSelector((state) => state);
+    const dispatch = useDispatch();
     return (
-        <>Galeria</>
+        <div className="sub_buttons_box flexCC">
+            <div className="sub_button">
+                <div className="sub_button_title">Rodzaj menu</div>
+                <select onChange={(event)=>dispatch(method.changeState(['komponent_glowny', event.target.value]))} value={state.value.komponent_glowny}>
+                    <option value="">Wybierz galerię</option>
+                    <option value="gallery_1">Galeria 1</option>
+                    <option value="gallery_2">Galeria 2</option>
+                </select>
+            </div>
+        </div>
     )
 }
 export function Kontakt(){
