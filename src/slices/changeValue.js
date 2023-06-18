@@ -14,11 +14,14 @@ export const changeValue = createSlice({
     button_name_value: "aaa",
     submenu_active: "",
     sm_4_box: "",
-    komponent_glowny: 'gallery_1',
+    komponent_glowny: 'portfolio_1',
     image_index: "",
     active_full_image: false,
     gallery: ["./images/img_1.jpg", "./images/img_2.jpg", "./images/img_3.jpg", "./images/img_4.jpg", "./images/img_5.jpg", "./images/img_6.jpg", "./images/img_7.jpg",
-    "./images/img_8.jpg", "./images/img_9.jpg", "./images/img_10.jpg", "./images/img_11.jpg"]
+    "./images/img_8.jpg", "./images/img_9.jpg", "./images/img_10.jpg", "./images/img_11.jpg"],
+    p_e_active: "",
+    p_e_index: "",
+    gallery_num: 0
   },
   reducers: {
     changeState: (state, action)=>{
@@ -45,11 +48,21 @@ export const changeValue = createSlice({
           state.image_index = 0;
         }
       }
+    },
+    changeImage2: (state, action)=>{
+      let n = state.gallery_num;
+				n += action.payload[0];
+				if(n < 0){
+						state.gallery_num = Math.abs((state.gallery.length + n) % state.gallery.length)
+				}
+				else {
+						state.gallery_num = Math.abs(n % state.gallery.length)
+				}
     }
   },
 })
 
 // Action creators are generated for each case reducer function
-export const { changeState, negativeState, changeImage } = changeValue.actions
+export const { changeState, negativeState, changeImage, changeImage2 } = changeValue.actions
 
 export default changeValue.reducer

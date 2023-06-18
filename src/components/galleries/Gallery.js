@@ -21,7 +21,9 @@ export function Gallery_1(){
                 <div className='arrows_box flexCC'>
                     <span className="arrow_box" onClick={()=>dispatch(method.changeImage('minus'))}><i className="fa-solid fa-chevron-left"></i></span>
                     <span className="arrow_box" onClick={()=>dispatch(method.changeImage('plus'))}><i className="fa-solid fa-chevron-right"></i></span>
+                    
                 </div>
+                <span className="close" onClick={()=>dispatch(method.negativeState('active_full_image'))}><i class="fa-solid fa-xmark"></i></span>
             </div>: null}
         </div>
     )

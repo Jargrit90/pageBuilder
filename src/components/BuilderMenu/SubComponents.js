@@ -88,8 +88,19 @@ export function Glowna(){
     )
 }
 export function Portfolio(){
+    const state = useSelector((state) => state);
+    const dispatch = useDispatch();
     return (
-        <>Portfolio</>
+        <div className="sub_buttons_box flexCC">
+            <div className="sub_button">
+                <div className="sub_button_title">Rodzaj menu</div>
+                <select onChange={(event)=>dispatch(method.changeState(['komponent_glowny', event.target.value]))} value={state.value.komponent_glowny}>
+                    <option value="">Wybierz portfolio</option>
+                    <option value="portfolio_1">Portfolio 1</option>
+                    <option value="portfolio_2">Portfolio 2</option>
+                </select>
+            </div>
+        </div>
     )
 }
 export function Galeria(){

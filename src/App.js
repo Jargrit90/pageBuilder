@@ -9,6 +9,7 @@ import * as menuOption from './components/menus/Simple_menu';
 import * as menuOption_2 from './components/menus/Side_menu';
 import * as mainpageOption from './components/mainpages/Mainpage';
 import * as galleryOption from './components/galleries/Gallery';
+import * as portfolioOption from './components/portfolios/Portfolio';
 /*
 font-family: 'Abel', sans-serif;
 font-family: 'Lobster', cursive;
@@ -39,6 +40,8 @@ function App() {
         {state.value.komponent_glowny === 'mainpage_2' ? <mainpageOption.Mainpage_2 /> : null}
         {state.value.komponent_glowny === 'mainpage_3' ? <mainpageOption.Mainpage_3 /> : null}
         {state.value.komponent_glowny === 'gallery_1' ? <galleryOption.Gallery_1 /> : null}
+        {state.value.komponent_glowny === 'portfolio_1' ? <portfolioOption.Portfolio_1 /> : null}
+        {state.value.komponent_glowny === 'portfolio_2' ? <portfolioOption.Portfolio_2 /> : null}
       </div>
       <BuilderMenu />
     </div>
